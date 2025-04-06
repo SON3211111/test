@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*버튼의 테두리리*/
+    color: #fff;
+    font-family: 'Jua', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /*가로정렬*/
+    justify-content: center;
+    /*수평 주앙정렬*/
+    background-color: black;
+}
+
+
+.all {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.band {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.band>h1 {
+    font-size: 50px;
+}
+
+.bandimag {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image>img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* 박스 채우기 + 비율 유지 */
+    display: block;
+    border-radius: 5px;
+}
+
+.image>p {
+    margin-top: 8px;
+    /* 🔹 위에 여백 추가 */
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #ccc;
+    font-weight: bold;
+    /* 🔹 두껍게 */
+}
+
+.image img {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    /* 커지기 */
+    opacity: 0.9;
+    /* 살짝 투명해짐 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* 그림자 효과 */
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination button {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    margin: 2px;
+    cursor: pointer;
+    font-family: 'Jua', sans-serif;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background-color: #333;
+    color: white;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    vertical-align: middle;
+    /* 또는 top / baseline */
+}
+
+.icon-button:hover {
+    transform: scale(1.05);
+    /* 살짝 커짐 */
+}
+
+.page-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Jua', sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 4px 8px;
+    border-radius: 10px;
+}
