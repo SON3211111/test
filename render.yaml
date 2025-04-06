@@ -2,7 +2,5 @@ services:
   - type: web
     name: flask-app
     env: python
-    buildCommand: |
-      pip install --upgrade pip
-      pip install -r requirements.txt
-    startCommand: gunicorn app:app  # 또는 다른 서버 사용
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: gunicorn app:app  # gunicorn을 사용해 프로덕션 서버 실행
