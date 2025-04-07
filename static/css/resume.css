@@ -25,6 +25,7 @@ body {
     width: auto;
     display: flex;
     border-radius: 20px;
+    justify-content: center;
 }
 
 .title > h1{
@@ -33,10 +34,6 @@ body {
 
 .title > h2{
     margin-top: 20px;
-}
-
-.my{
-    justify-content: center;
 }
 
 .my > img {
