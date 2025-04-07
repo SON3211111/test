@@ -43,6 +43,14 @@ body {
     gap: 180px;
 }
 
+.title>h1:hover{
+    transform: scale(1.05);
+    /* 커지기 */
+    opacity: 0.9;
+    /* 살짝 투명해짐 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* 그림자 효과 */
+}
 .box {
     width: auto;
     height: auto;
