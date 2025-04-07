@@ -33,7 +33,6 @@ body {
 
 .title > h2{
     margin-top: 20px;
-    margin-bottom: 25px;
 }
 
 .my{
@@ -43,7 +42,7 @@ body {
 .my > img {
     width: 500px;
     height: 500px; /* width와 같게 맞춤 */
-    margin-top: 50px;
+    margin-top: 30px;
     object-fit: cover; /* 이미지 비율을 채우면서 자르기 */
     border-radius: 20px; /* 둥글게 하고 싶으면 유지! */
 }
