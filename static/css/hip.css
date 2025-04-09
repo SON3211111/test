@@ -15,12 +15,14 @@ body {
     justify-content: center;
     /*수평 중앙정렬*/
     background-color: black;
+    padding-left: 0 40px 0 20px; /* 🔹 아이콘바 너비만큼 보정 */
+    align-items: flex-start; /* 필요하면 중앙정렬로 변경 가능 */
 }
 
 
 .all {
     max-width: 1200px;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .hip {
