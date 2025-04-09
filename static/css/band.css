@@ -161,3 +161,65 @@ body {
     border-radius: 10px;
     cursor: default;
 }
+
+/* 🔹 태블릿용 (화면 너비가 1024px 이하일 때) */
+@media screen and (max-width: 1024px) {
+    .band>h1 {
+        font-size: 40px;
+    }
+
+    .bandimag {
+        grid-template-columns: repeat(4, 1fr); /* 7개 → 4개로 */
+        gap: 16px;
+    }
+
+    .image>img {
+        height: 160px;
+    }
+
+    .pagination button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+/* 🔹 모바일용 (화면 너비가 600px 이하일 때) */
+@media screen and (max-width: 600px) {
+    .band>h2 {
+        font-size: 28px;
+    }
+
+    .bandimag {
+        grid-template-columns: repeat(2, 1fr); /* 7개 → 2개로 */
+        gap: 12px;
+    }
+
+    .image>img {
+        height: 140px;
+    }
+
+    .image>p {
+        font-size: 13px;
+    }
+
+    .icon-bar {
+        left: 10px;
+        padding: 6px;
+    }
+
+    .icon-button {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .pagination button {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    .page-indicator {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+}
+

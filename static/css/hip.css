@@ -122,22 +122,84 @@ body {
     cursor: default;
 }
 
-/* 미디어 쿼리 반응형 웹
-@media (max-width: 1024px) {
-    .hipimag {
-      grid-template-columns: repeat(4, 1fr);
+  /* 🔹 태블릿용 (화면 너비가 1024px 이하일 때) */
+@media screen and (max-width: 1024px) {
+    .hip>h2 {
+        font-size: 40px;
     }
-  }
-  
-  @media (max-width: 768px) {
+
     .hipimag {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* 7개 → 4개로 */
+        gap: 16px;
     }
-  }
-  
-  @media (max-width: 480px) {
+
+    .image>img {
+        height: 160px;
+    }
+
+    .pagination button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+/* 🔹 태블릿용 (화면 너비가 1024px 이하일 때) */
+@media screen and (max-width: 1024px) {
+    .hhip>h2 {
+        font-size: 40px;
+    }
+
     .hipimag {
-      grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr); /* 7개 → 4개로 */
+        gap: 16px;
     }
-  } */
-  
+
+    .image>img {
+        height: 160px;
+    }
+
+    .pagination button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+/* 🔹 모바일용 (화면 너비가 600px 이하일 때) */
+@media screen and (max-width: 600px) {
+    .hip>h2 {
+        font-size: 28px;
+    }
+
+    .hipimag {
+        grid-template-columns: repeat(2, 1fr); /* 7개 → 2개로 */
+        gap: 12px;
+    }
+
+    .image>img {
+        height: 140px;
+    }
+
+    .image>p {
+        font-size: 13px;
+    }
+
+    .icon-bar {
+        left: 10px;
+        padding: 6px;
+    }
+
+    .icon-button {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .pagination button {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    .page-indicator {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+}

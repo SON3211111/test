@@ -43,3 +43,45 @@ body {
     object-fit: cover; /* 이미지 비율을 채우면서 자르기 */
     border-radius: 20px; /* 둥글게 하고 싶으면 유지! */
 }
+
+@media screen and (max-width: 1024px) {
+    .title h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .my img {
+        width: 60%;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .title div[style*="font-size: 60px"] {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title h1 {
+        font-size: 22px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+    }
+
+    .my img {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .title div[style*="font-size: 60px"] {
+        font-size: 32px !important;
+    }
+}
