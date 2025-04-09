@@ -64,6 +64,7 @@ body {
     border-radius: 30px;
     margin-bottom: 50px;
     transition: 0.8s;
+    cursor: pointer; /* 마우스 오버 시 손가락 커서 */
 }
 
 .box > img:hover {
